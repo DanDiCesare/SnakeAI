@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>SnakeNEAT</title>
+    <link rel="shortcut icon" type="image/png" href="imgs/logo.png"/>
+    <style>
+        canvas {
+            background: grey
+        }
+    </style>
+    <script>
+        window.addEventListener("keydown", function(e) {
+            if(["Space","ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].indexOf(e.code) > -1) {
+                e.preventDefault();
+            }
+        }, false);
+    </script>
+    <script src="js/p5.js"></script>
+    <script src="js/food.js"></script>
+    <script src="js/Matrix.js"></script>
+    <script src ="js/NeuralNet.js"></script>
+    <script src="js/snake.js"></script>
+    <script src="js/Population.js"></script>
+    <script src="js/snakeAI.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+
+    <img src="imgs/logo.png" alt="logo" id="logo"/>
+    <span>SnakeNEAT</span>
+
+    <center>
+        <button id="toggleReal" hidden></button>
+        <label class="button" for="toggleReal" id="toggleButton">Player</label>
+
+        <button id="allSnakeReal" hidden></button>
+        <label class="button" for="allSnakeReal" id="allSnakeButton">Visible</label>
+
+        <label id="mut">Mutation Rate:</label>
+        <button class="mutButton plus" onclick="incrMut()">+</button>
+        <button class="mutButton minus" onclick="decrMut()">-</button>
+    </center>
+
+    <main></main> <!--canvas-->
+
+    <center>
+        <button id="saveReal" hidden></button>
+        <label class="button" for="saveReal" id="saveButton">Save</label>
+
+        <input type="File" id="loadReal" hidden/>
+        <label class="button" for="loadReal" id="loadButton">Load</label>
+
+        <button id="graphReal" hidden></button>
+        <label class="button" for="graphReal" id="graphButton">Graph</label>    
+
+    </center>
+</body>
+</html>
