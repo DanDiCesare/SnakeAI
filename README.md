@@ -6,7 +6,7 @@ This project is a reimplementation of [SnakeAI](https://github.com/greerviau/Sna
 ## Installation Instructions
 
 
-The finished project can be used at the following url:
+The finished project can be used at the following url: https://snakeneat.vercel.app/
 ## 
 
 
