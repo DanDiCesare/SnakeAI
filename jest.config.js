@@ -28,7 +28,7 @@ module.exports = {
   // An array of regexp pattern strings used to skip coverage collection
   coveragePathIgnorePatterns: [
     "\\\\node_modules\\\\",
-    "./src/js/p5.js"
+    "./js/p5.js"
   ],
 
   // Indicates which provider should be used to instrument code for coverage
@@ -126,7 +126,7 @@ module.exports = {
   // runner: "jest-runner",
 
   // The paths to modules that run some code to configure or set up the testing environment before each test
-  setupFiles: ["jest-canvas-mock", "./src/js/setup.js"],
+  setupFiles: ["jest-canvas-mock", "./js/setup.js"],
 
   // A list of paths to modules that run some code to configure or set up the testing framework before each test
   // setupFilesAfterEnv: [],
